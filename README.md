@@ -18,7 +18,7 @@ the Python code which is wrapped around it. You can build and run the container
 (locally) with Docker:
 ```
 docker build -t steamcmd-api:test .
-docker run -p 8080:8080 -d steamcmd-api:test
+docker run  --name=api -p 80:8080 -d steamcmd-api:test
 ```
 However during development, using Docker Compose is preferred.
 See the [Development](#development) section for information.
